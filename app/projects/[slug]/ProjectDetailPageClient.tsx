@@ -59,7 +59,7 @@ export default function ProjectDetailPageClient({ params }: { params: { slug: st
                 <div className="relative aspect-video bg-slate-100 dark:bg-slate-700">
                   {media[currentMediaIndex].type === "image" ? (
                     <Image
-                      src={media[currentMediaIndex].url || "/placeholder.svg"}
+                      src={nextConfig.basePath+media[currentMediaIndex].url || "/placeholder.svg"}
                       alt={media[currentMediaIndex].alt}
                       fill
                       className="w-full h-full object-cover"

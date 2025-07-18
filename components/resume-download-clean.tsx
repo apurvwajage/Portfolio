@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Download, CheckCircle } from "lucide-react"
 import { personalInfo } from "@/lib/data"
+import nextConfig from "@/next.config.mjs"
 
 export function ResumeDownloadClean() {
   const [isDownloading, setIsDownloading] = useState(false)
@@ -16,7 +17,7 @@ export function ResumeDownloadClean() {
 
     try {
       const resumeUrl =
-        personalInfo.resumeUrl || "https://github.com/apurvwajage/Portfolio/blob/main/Apurva_Wajage.pdf"
+        nextConfig.basePath + personalInfo.resumeUrl || "/Apurva_Wajage.pdf"
 
       const response = await fetch(resumeUrl)
       const blob = await response.blob()
