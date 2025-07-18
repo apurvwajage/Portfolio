@@ -57,10 +57,11 @@ export default function ProjectDetailPageClient({ params }: { params: { slug: st
               <CardContent className="p-0">
                 <div className="relative aspect-video bg-slate-100 dark:bg-slate-700">
                   {media[currentMediaIndex].type === "image" ? (
-                    <img
+                    <Image
                       src={media[currentMediaIndex].url || "/placeholder.svg"}
                       alt={media[currentMediaIndex].alt}
-                      className="w-full h-full object-cover"
+                      layout="fill"
+                      objectFit="cover"
                     />
                   ) : (
                     <div className="relative w-full h-full flex items-center justify-center">

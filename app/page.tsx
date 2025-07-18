@@ -16,6 +16,7 @@ import { TypingAnimation } from "@/components/typing-animation"
 import { AnimatedCounter } from "@/components/animated-counter"
 import { ResumeDownloadClean } from "@/components/resume-download-clean"
 import { useState } from "react"
+import Image from 'next/image'
 
 export default function HomePage() {
   return (
@@ -189,10 +190,12 @@ export default function HomePage() {
                 >
                   <CardHeader className="p-0">
                     <div className="relative overflow-hidden rounded-t-lg">
-                      <img
+                      <Image
                         src={project.imageUrl || "/placeholder.svg?height=200&width=400"}
                         alt={project.title}
-                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                        layout="fill"
+                        objectFit="cover"
+                        className="group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
                   </CardHeader>
