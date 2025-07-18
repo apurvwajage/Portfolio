@@ -1,6 +1,6 @@
 // This file mocks your personal information and project data.
 // In a real application, this data would typically come from a database, CMS, or API.
-
+import nextConfig from "@/next.config.mjs"
 export const personalInfo = {
   name: "Apurva Wajage", // Replace with your actual name
   title: "Software Engineer", // Replace with your title
@@ -20,14 +20,14 @@ export const projects = [
       "A full-stack expense tracker with user authentication, transaction logging, and PDF upload for automated analysis.",
     longDescription:
       "Built a feature-rich expense tracking platform that allows users to securely log in, record income and expenses, and upload transaction PDFs for automatic data extraction and analysis. Integrated a PostgreSQL database for persistent storage and used Django for backend APIs. The frontend, developed in React, offers a clean and responsive user interface for efficient financial management.",
-    imageUrl: "/ExpenseTrackerMain.png?height=400&width=600", // Replace with an actual image URL
+    imageUrl: nextConfig.basePath+"/ExpenseTrackerMain.png?height=400&width=600", // Replace with an actual image URL
     technologies: ["Python", "Django", "Supabase", "HTML", "CSS", "JavaScript"],
     liveUrl: "https://expensetracker-1ivl.onrender.com", // Replace with live demo URL if available
     githubUrl: "https://github.com/apurvwajage/ExpenseTracker", // Replace with project GitHub URL
     media: [
       {
         type: "image",
-        url: "/ExpenseTrackerMain.png?height=400&width=600&text=E-commerce+Homepage",
+        url: nextConfig.basePath+"/ExpenseTrackerMain.png?height=400&width=600&text=E-commerce+Homepage",
         alt: "E-commerce Homepage",
       },
       { type: "image", url: "/ExpenseTrackerDashboardDark.png?height=400&width=600&text=Product+Catalog", alt: "Product Catalog" },

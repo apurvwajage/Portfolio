@@ -60,16 +60,16 @@ export default function ProjectDetailPageClient({ params }: { params: { slug: st
                     <Image
                       src={media[currentMediaIndex].url || "/placeholder.svg"}
                       alt={media[currentMediaIndex].alt}
-                      layout="fill"
-                      objectFit="cover"
+                      fill
+                      className="w-full h-full object-cover"
                     />
                   ) : (
                     <div className="relative w-full h-full flex items-center justify-center">
                       <Image
                         src={media[currentMediaIndex].thumbnail || "/placeholder.svg"}
                         alt={media[currentMediaIndex].alt}
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                         <Button
@@ -134,8 +134,8 @@ export default function ProjectDetailPageClient({ params }: { params: { slug: st
                     <Image
                       src={item.type === "image" ? item.url : item.thumbnail}
                       alt={item.alt}
-                      layout="fill"
-                      objectFit="cover"
+                      fill
+                      className="w-full h-full object-cover"
                     />
                     {item.type === "video" && (
                       <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
