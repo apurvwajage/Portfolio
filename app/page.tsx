@@ -99,7 +99,7 @@ export default function HomePage() {
               <div className="flex-shrink-0">
                 <div className="relative">
                   <Avatar className="h-80 w-80 border-4 border-slate-200 dark:border-slate-700 shadow-2xl">
-                    <AvatarImage src="/mainProfile.jpg?height=320&width=320" alt={personalInfo.name} />
+                    <AvatarImage src="/Portfolio/mainProfile.jpg?height=320&width=320" alt={personalInfo.name} />
                     <AvatarFallback className="text-4xl bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white">
                       {personalInfo.name
                         .split(" ")
