@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, ExternalLink, Github, ChevronLeft, ChevronRight, Play } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
+import Image from 'next/image'
 
 // Mock media data - replace with actual project media
 const getProjectMedia = (project: any) => {
@@ -63,10 +64,11 @@ export default function ProjectDetailPageClient({ params }: { params: { slug: st
                     />
                   ) : (
                     <div className="relative w-full h-full flex items-center justify-center">
-                      <img
+                      <Image
                         src={media[currentMediaIndex].thumbnail || "/placeholder.svg"}
                         alt={media[currentMediaIndex].alt}
-                        className="w-full h-full object-cover"
+                        layout="fill"
+                        objectFit="cover"
                       />
                       <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                         <Button
@@ -128,10 +130,11 @@ export default function ProjectDetailPageClient({ params }: { params: { slug: st
                         : "border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500"
                     }`}
                   >
-                    <img
+                    <Image
                       src={item.type === "image" ? item.url : item.thumbnail}
                       alt={item.alt}
-                      className="w-full h-full object-cover"
+                      layout="fill"
+                      objectFit="cover"
                     />
                     {item.type === "video" && (
                       <div className="absolute inset-0 bg-black/30 flex items-center justify-center">

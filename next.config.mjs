@@ -1,8 +1,15 @@
 /** @type {import('next').NextConfig} */
+
+const basePath = "/Portfolio";
+
 const nextConfig = {
-  basePath: "/Portfolio",
-  assetPrefix: "/Portfolio/",
-  
+  basePath: basePath,
+  assetPrefix: basePath + "/",
+
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
+
   output: 'export',
   trailingSlash: true,
   eslint: {

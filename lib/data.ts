@@ -20,19 +20,19 @@ export const projects = [
       "A full-stack expense tracker with user authentication, transaction logging, and PDF upload for automated analysis.",
     longDescription:
       "Built a feature-rich expense tracking platform that allows users to securely log in, record income and expenses, and upload transaction PDFs for automatic data extraction and analysis. Integrated a PostgreSQL database for persistent storage and used Django for backend APIs. The frontend, developed in React, offers a clean and responsive user interface for efficient financial management.",
-    imageUrl: "/Portfolio/ExpenseTrackerMain.png?height=400&width=600", // Replace with an actual image URL
+    imageUrl: "/ExpenseTrackerMain.png?height=400&width=600", // Replace with an actual image URL
     technologies: ["Python", "Django", "Supabase", "HTML", "CSS", "JavaScript"],
     liveUrl: "https://expensetracker-1ivl.onrender.com", // Replace with live demo URL if available
     githubUrl: "https://github.com/apurvwajage/ExpenseTracker", // Replace with project GitHub URL
     media: [
       {
         type: "image",
-        url: "/Portfolio/ExpenseTrackerMain.png?height=400&width=600&text=E-commerce+Homepage",
+        url: "/ExpenseTrackerMain.png?height=400&width=600&text=E-commerce+Homepage",
         alt: "E-commerce Homepage",
       },
-      { type: "image", url: "/Portfolio/ExpenseTrackerDashboardDark.png?height=400&width=600&text=Product+Catalog", alt: "Product Catalog" },
-      { type: "image", url: "/Portfolio/ExpenseTrackerDashboardLight.png?height=400&width=600&text=Shopping+Cart", alt: "Shopping Cart" },
-      { type: "image", url: "/Portfolio/ExpenseTrackerTransactions.png?height=400&width=600&text=Checkout+Process", alt: "Checkout Process" },
+      { type: "image", url: "/ExpenseTrackerDashboardDark.png?height=400&width=600&text=Product+Catalog", alt: "Product Catalog" },
+      { type: "image", url: "/ExpenseTrackerDashboardLight.png?height=400&width=600&text=Shopping+Cart", alt: "Shopping Cart" },
+      { type: "image", url: "/ExpenseTrackerTransactions.png?height=400&width=600&text=Checkout+Process", alt: "Checkout Process" },
       // {
       //   type: "video",
       //   url: "/placeholder-video.mp4",
@@ -77,25 +77,25 @@ export const projects = [
     shortDescription: "An RFID-based smart museum security system with real-time monitoring and intrusion detection.",
     longDescription:
       "Engineered a robust museum security solution integrating RFID-based entry validation, artifact protection using IR sensors, and visitor proximity detection via ultrasonic sensors. Real-time monitoring and logging were implemented using Python scripts and Google Sheets. The system controls access with servos and displays status messages on an LCD. Alerts are triggered through a buzzer for any suspicious activity, ensuring enhanced artifact safety.",
-    imageUrl: "/Portfolio/MuseumSecuritySystemStructure.png?height=400&width=600", // Replace with an actual image URL
+    imageUrl: "/MuseumSecuritySystemStructure.png?height=400&width=600", // Replace with an actual image URL
     technologies: ["Arduino", "Python", "RFID", "IR Sensor", "Ultrasonic Sensor", "Google Sheets", "LCD Display", "Servo Motor", "Buzzer"],
     liveUrl: "#", // Replace with live demo URL if available
     githubUrl: "#", // Replace with project GitHub URL
     media: [
       {
         type: "image",
-        url: "/Portfolio/placeholder.svg?height=400&width=600&text=E-commerce+Homepage",
+        url: "/placeholder.svg?height=400&width=600&text=E-commerce+Homepage",
         alt: "E-commerce Homepage",
       },
-      { type: "image", url: "/Portfolio/MuseumSecuritySystemStructure.png?height=400&width=600&text=Product+Catalog", alt: "Product Catalog" },
-      { type: "image", url: "/Portfolio/placeholder.svg?height=400&width=600&text=Shopping+Cart", alt: "Shopping Cart" },
-      { type: "image", url: "/Portfolio/placeholder.svg?height=400&width=600&text=Checkout+Process", alt: "Checkout Process" },
-      // {
-      //   type: "video",
-      //   url: "/placeholder-video.mp4",
-      //   thumbnail: "/placeholder.svg?height=400&width=600&text=E-commerce+Demo",
-      //   alt: "E-commerce Platform Demo",
-      // },
+      { type: "image", url: "/MuseumSecuritySystemStructure.png?height=400&width=600&text=Product+Catalog", alt: "Product Catalog" },
+      { type: "image", url: "/placeholder.svg?height=400&width=600&text=Shopping+Cart", alt: "Shopping Cart" },
+      { type: "image", url: "/placeholder.svg?height=400&width=600&text=Checkout+Process", alt: "Checkout Process" },
+      {
+        type: "video",
+        url: "/placeholder-video.mp4",
+        thumbnail: "/placeholder.svg?height=400&width=600&text=E-commerce+Demo",
+        alt: "E-commerce Platform Demo",
+      },
     ],
     keyFeatures: [
       "RFID-based entry system for visitor verification",
@@ -136,20 +136,20 @@ export const projects = [
     shortDescription: "A complete store management application with inventory, billing, and sales tracking features.(The project is not live)",
     longDescription:
       "Developed a robust system for managing store operations, including product inventory, sales, billing, and stock tracking. Enabled secure user authentication and role-based access for managers and employees. Integrated dynamic product listing, transaction records, and sales analytics. The application improves day-to-day store operations and inventory accuracy.",
-    imageUrl: "/Portfolio/StoreManagementMain.png?height=400&width=600", // Replace with an actual image URL
+    imageUrl: "/StoreManagementMain.png?height=400&width=600", // Replace with an actual image URL
     technologies: ["JSP", "MySQL", "HTML", "CSS", "JavaScript"],
     liveUrl: "#", // Replace with live demo URL if available
     githubUrl: "https://github.com/janedoe/personal-blog", // Replace with project GitHub URL
     media: [
       {
         type: "image",
-        url: "/Portfolio/StoreManagementMain.png?height=400&width=600&text=E-commerce+Homepage",
+        url: "/StoreManagementMain.png?height=400&width=600&text=E-commerce+Homepage",
         alt: "E-commerce Homepage",
       },
-      { type: "image", url: "/Portfolio/StoreManagementDashboard.png?height=400&width=600&text=Product+Catalog", alt: "Dashboard" },
-      { type: "image", url: "/Portfolio/StoreManagementInventory.png?height=400&width=600&text=Shopping+Cart", alt: "Inventory" },
-      { type: "image", url: "/Portfolio/StoreManagementReports.png?height=400&width=600&text=Checkout+Process", alt: "Reports" },
-      { type: "image", url: "/Portfolio/StoreManagementAnalytics.png?height=400&width=600&text=Checkout+Process", alt: "Analytics" },
+      { type: "image", url: "/StoreManagementDashboard.png?height=400&width=600&text=Product+Catalog", alt: "Dashboard" },
+      { type: "image", url: "/StoreManagementInventory.png?height=400&width=600&text=Shopping+Cart", alt: "Inventory" },
+      { type: "image", url: "/StoreManagementReports.png?height=400&width=600&text=Checkout+Process", alt: "Reports" },
+      { type: "image", url: "/StoreManagementAnalytics.png?height=400&width=600&text=Checkout+Process", alt: "Analytics" },
       // {
       //   type: "video",
       //   url: "/placeholder-video.mp4",
