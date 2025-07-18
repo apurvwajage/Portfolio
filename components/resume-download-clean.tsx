@@ -16,7 +16,7 @@ export function ResumeDownloadClean() {
 
     try {
       const resumeUrl =
-        personalInfo.resumeUrl || "https://github.com/apurvwajage/Portfolio/main/apurva_wajage.pdf"
+        personalInfo.resumeUrl || "https://github.com/apurvwajage/Portfolio/blob/main/Apurva_Wajage.pdf"
 
       const response = await fetch(resumeUrl)
       const blob = await response.blob()
