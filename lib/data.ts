@@ -20,14 +20,14 @@ export const projects = [
       "A full-stack expense tracker with user authentication, transaction logging, and PDF upload for automated analysis.",
     longDescription:
       "Built a feature-rich expense tracking platform that allows users to securely log in, record income and expenses, and upload transaction PDFs for automatic data extraction and analysis. Integrated a PostgreSQL database for persistent storage and used Django for backend APIs. The frontend, developed in React, offers a clean and responsive user interface for efficient financial management.",
-    imageUrl: nextConfig.basePath+"/ExpenseTrackerMain.png?height=400&width=600", // Replace with an actual image URL
+    imageUrl: "/ExpenseTrackerMain.png?height=400&width=600", // Replace with an actual image URL
     technologies: ["Python", "Django", "Supabase", "HTML", "CSS", "JavaScript"],
     liveUrl: "https://expensetracker-1ivl.onrender.com", // Replace with live demo URL if available
     githubUrl: "https://github.com/apurvwajage/ExpenseTracker", // Replace with project GitHub URL
     media: [
       {
         type: "image",
-        url: nextConfig.basePath+"/ExpenseTrackerMain.png?height=400&width=600&text=E-commerce+Homepage",
+        url: "/ExpenseTrackerMain.png?height=400&width=600&text=E-commerce+Homepage",
         alt: "E-commerce Homepage",
       },
       { type: "image", url: "/ExpenseTrackerDashboardDark.png?height=400&width=600&text=Product+Catalog", alt: "Product Catalog" },

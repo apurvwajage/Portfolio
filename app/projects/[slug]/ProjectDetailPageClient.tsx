@@ -9,6 +9,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, ExternalLink, Github, ChevronLeft, ChevronRight, Play } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import Image from 'next/image'
+import nextConfig from "@/next.config.mjs"
 
 // Mock media data - replace with actual project media
 const getProjectMedia = (project: any) => {
@@ -66,7 +67,7 @@ export default function ProjectDetailPageClient({ params }: { params: { slug: st
                   ) : (
                     <div className="relative w-full h-full flex items-center justify-center">
                       <Image
-                        src={media[currentMediaIndex].thumbnail || "/placeholder.svg"}
+                        src={nextConfig.basePath + media[currentMediaIndex].thumbnail || "/placeholder.svg"}
                         alt={media[currentMediaIndex].alt}
                         fill
                         className="w-full h-full object-cover"
@@ -132,7 +133,7 @@ export default function ProjectDetailPageClient({ params }: { params: { slug: st
                     }`}
                   >
                     <Image
-                      src={item.type === "image" ? item.url : item.thumbnail}
+                      src={item.type === "image" ? nextConfig.basePath+item.url : item.thumbnail}
                       alt={item.alt}
                       fill
                       className="w-full h-full object-cover"

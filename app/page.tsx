@@ -16,6 +16,7 @@ import { TypingAnimation } from "@/components/typing-animation"
 import { AnimatedCounter } from "@/components/animated-counter"
 import { ResumeDownloadClean } from "@/components/resume-download-clean"
 import { useState } from "react"
+import nextConfig from "@/next.config.mjs"
 
 export default function HomePage() {
   return (
@@ -99,7 +100,7 @@ export default function HomePage() {
               <div className="flex-shrink-0">
                 <div className="relative">
                   <Avatar className="h-80 w-80 border-4 border-slate-200 dark:border-slate-700 shadow-2xl">
-                    <AvatarImage src="/mainProfile.jpg?height=320&width=320" alt={personalInfo.name} />
+                    <AvatarImage src ={`${nextConfig.basePath}/mainProfile.jpg?height=320&width=320`} alt={personalInfo.name} />
                     <AvatarFallback className="text-4xl bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white">
                       {personalInfo.name
                         .split(" ")
@@ -190,7 +191,7 @@ export default function HomePage() {
                   <CardHeader className="p-0">
                     <div className="relative overflow-hidden rounded-t-lg">
                       <img
-                        src={project.imageUrl || "/placeholder.svg?height=200&width=400"}
+                        src={nextConfig.basePath + project.imageUrl || "/placeholder.svg?height=200&width=400"}
                         alt={project.title}
                         className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                       />
