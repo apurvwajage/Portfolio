@@ -17,7 +17,7 @@ export function ResumeDownloadClean() {
 
     try {
       const resumeUrl =
-        nextConfig.basePath + personalInfo.resumeUrl || "/Apurva_Wajage.pdf"
+        personalInfo.resumeUrl || "/Apurva_Wajage.pdf"
 
       const response = await fetch(resumeUrl)
       const blob = await response.blob()
@@ -25,6 +25,7 @@ export function ResumeDownloadClean() {
       const url = window.URL.createObjectURL(blob)
       const a = document.createElement("a")
       a.href = url
+      a.target="_blank"
       a.download = `${personalInfo.name.replace(" ", "_")}_Resume.pdf`
       document.body.appendChild(a)
       a.click()
