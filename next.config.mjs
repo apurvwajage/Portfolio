@@ -1,33 +1,24 @@
 /** @type {import('next').NextConfig} */
-
-// This variable checks if the build is for production (like on GitHub Pages)
 const isProd = process.env.NODE_ENV === 'production';
-
-// Define the repository name
-const repoName = "/Portfolio";
-
-
-const basePath = "/Portfolio";
+const repoName = 'Portfolio'; // your GitHub repo name (no slash)
 
 const nextConfig = {
-  basePath: isProd ? repoName : "",
-  assetPrefix: isProd ? repoName + "/" : "",
-
-  env: {
-    NEXT_PUBLIC_BASE_PATH: isProd ? repoName : "",
-  },
-
-  output: 'export',
+  output: 'export', // needed for GitHub Pages
+  basePath: isProd ? `/${repoName}` : '',
+  assetPrefix: isProd ? `/${repoName}/` : '',
   trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
   typescript: {
     ignoreBuildErrors: true,
   },
-  images: {
-    unoptimized: true
-  }
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? `/${repoName}` : '',
+  },
 };
 
 export default nextConfig;
