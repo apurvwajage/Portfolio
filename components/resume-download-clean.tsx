@@ -10,37 +10,33 @@ export function ResumeDownloadClean() {
   const [isDownloading, setIsDownloading] = useState(false)
   const [isDownloaded, setIsDownloaded] = useState(false)
 
-  const handleDownload = async () => {
-    if (isDownloading || isDownloaded) return
+  const handleDownload = () => {
+  if (isDownloading || isDownloaded) return
 
-    setIsDownloading(true)
+  setIsDownloading(true)
 
-    try {
-      const resumeUrl =
-        personalInfo.resumeUrl || "/Apurva_Wajage.pdf"
+  try {
+    const resumeUrl =
+      personalInfo.resumeUrl || "/Apurva_Wajage.pdf"
 
-      const response = await fetch(resumeUrl)
-      const blob = await response.blob()
+    const a = document.createElement("a")
+    a.href = resumeUrl
+    a.download = `${personalInfo.name.replace(" ", "_")}_Resume.pdf`
+    a.rel = "noopener noreferrer"
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
 
-      const url = window.URL.createObjectURL(blob)
-      const a = document.createElement("a")
-      a.href = url
-      a.target="_blank"
-      a.download = `${personalInfo.name.replace(" ", "_")}_Resume.pdf`
-      document.body.appendChild(a)
-      a.click()
-      window.URL.revokeObjectURL(url)
-      document.body.removeChild(a)
-
-      setIsDownloaded(true)
-      setTimeout(() => setIsDownloaded(false), 3000)
-    } catch (error) {
-      console.error("Download failed:", error)
-      alert("Download failed. Please try again.")
-    } finally {
-      setIsDownloading(false)
-    }
+    setIsDownloaded(true)
+    setTimeout(() => setIsDownloaded(false), 3000)
+  } catch (error) {
+    console.error("Download failed:", error)
+    alert("Download failed. Please try again.")
+  } finally {
+    setIsDownloading(false)
   }
+}
+
 
   return (
     <Button
