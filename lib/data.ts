@@ -8,7 +8,7 @@ export const personalInfo = {
   githubUrl: "https://github.com/apurvwajage", // Replace with your GitHub URL
   linkedinUrl: "https://linkedin.com/in/apurvwajage", // Replace with your LinkedIn URL
   email: "apurvawajage@gmail.com", // Replace with your email
-  resumeUrl: "https://drive.google.com/file/d/16KrRDm3lMRh5GouE-_xh1Y8jXqTwQPG5/view?usp=sharing", // Replace with your actual GitHub raw file URL
+  resumeUrl: "https://drive.google.com/file/d/1imOcED0qlPuM11QiVPMUKQhWwMzviHsE/view?usp=sharing", // Replace with your actual GitHub raw file URL
 }
 
 export const projects = [
